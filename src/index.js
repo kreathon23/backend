@@ -100,7 +100,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 						'code': code,
 						'type': material.type,
 						'examples': material.examples,
-						'bin': null,
+						'bin': material.bin,
 					};
 				});
 				const recommendationOutput = {
@@ -125,7 +125,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 					'code': code,
 					'type': material.type,
 					'examples': material.examples,
-					'description': null,
+					'bin': material.bin,
 				};
 			});
 
