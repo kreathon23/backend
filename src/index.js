@@ -91,8 +91,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 						productID: recommendationID,
 					},
 				});
-				const recyclingCodesArr = recommendation.recyclingCodes.split(',');
-				const materials = recyclingCodesArr.map(code => {
+				const materials = !recommendation.recyclingCodes ? null : recommendation.recyclingCodes.split(',').map(code => {
 					const material = recycling_codes.find(o => o.num === code);
 					return !material ? null : {
 						'code': code,
@@ -118,12 +117,13 @@ app.get('/v1/products/:barcode', async (req, res) => {
 			}
 
 			const materials = !product.recyclingCodes ? null : product.recyclingCodes.split(',').map(code => {
-				const material = recycling_codes.find(o => o.num == code);
+				const material = recycling_codes.find(o => o.num === code);
 				return !material ? null : {
 					'code': code,
-					'type': material.type,
-					'examples': material.examples,
+					'type': material.typeGerman,
+					'examples': material.examplesGerman,
 					'bin': material.bin,
+					'ecoInfo': material.ecoInfoGerman,
 				};
 			});
 
