@@ -134,7 +134,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 				productDescription: product.productDescription,
 				productImage: `${config.url}/products/${product.barcode}.png`,
 				packagingType: product.packagingType,
-				materials: materials,
+				materials: materials == null ? [] : materials,
 				isRecyclable: product.isRecyclable,
 				recommendations: recommendationBarcodes,
 				productScore: product.productScore,
