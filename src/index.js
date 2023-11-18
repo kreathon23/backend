@@ -17,10 +17,10 @@ const Product = sequelize.define('Product', {
 	'productId': {
 		type: DataTypes.INTEGER,
 		primaryKey: true,
-		autoIncrement: true,
 	},
 	'barcode': {
 		type: DataTypes.STRING,
+		unique: true,
 	},
 	'productName': {
 		type: DataTypes.STRING,
@@ -31,14 +31,17 @@ const Product = sequelize.define('Product', {
 	'packagingType': {
 		type: DataTypes.STRING,
 	},
-	'recyclingCode': {
-		type: DataTypes.INTEGER,
+	'recyclingCodes': {
+		type: DataTypes.STRING,
 	},
 	'isRecyclable': {
 		type: DataTypes.BOOLEAN,
 	},
 	'productScore': {
 		type: DataTypes.INTEGER,
+	},
+	'price': {
+		type: DataTypes.FLOAT,
 	},
 });
 
@@ -88,13 +91,18 @@ app.get('/v1/products/:barcode', async (req, res) => {
 						productID: recommendationID,
 					},
 				});
-				// find in recycling_codes.json the material that matches the recycling code, array of objects with num value
-				const material = recycling_codes.find(o => o.num === product.recyclingCode);
-				const materialRes = !material ? null : {
-					'code': product.recyclingCode,
-					'type': material.type,
-					'examples': material.examples,
-				};
+				const recyclingCodesArr = recommendation.recyclingCodes.split(',');
+				console.log(recyclingCodesArr);
+				const materials = recyclingCodesArr.map(code => {
+					const material = recycling_codes.find(o => o.num === code);
+					console.log(material);
+					return !material ? null : {
+						'code': code,
+						'type': material.type,
+						'examples': material.examples,
+						'description': null,
+					};
+				});
 				const recommendationOutput = {
 					productID: recommendation.productID,
 					barcode: recommendation.barcode,
@@ -102,7 +110,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 					productDescription: recommendation.productDescription,
 					productImage: `${config.url}/products/${recommendation.barcode}.png`,
 					packagingType: recommendation.packagingType,
-					material: materialRes,
+					materials: materials,
 					isRecyclable: recommendation.isRecyclable,
 					recommendations: [],
 					productScore: recommendation.productScore,
@@ -110,13 +118,18 @@ app.get('/v1/products/:barcode', async (req, res) => {
 				recommendationBarcodes.push(recommendationOutput);
 			}
 
-			// find in recycling_codes.json the material that matches the recycling code, array of objects with num value
-			const material = recycling_codes.find(o => o.num === product.recyclingCode);
-			const materialRes = !material ? null : {
-				'code': product.recyclingCode,
-				'type': material.type,
-				'examples': material.examples,
-			};
+			const recyclingCodesArr = product.recyclingCodes.split(',');
+			const materials = recyclingCodesArr.map(code => {
+				const material = recycling_codes.find(o => o.num == code);
+				console.log(material);
+				return !material ? null : {
+					'code': code,
+					'type': material.type,
+					'examples': material.examples,
+					'description': null,
+				};
+			});
+
 			res.json({
 				productID: product.productID,
 				barcode: product.barcode,
@@ -124,7 +137,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 				productDescription: product.productDescription,
 				productImage: `${config.url}/products/${product.barcode}.png`,
 				packagingType: product.packagingType,
-				material: materialRes,
+				materials: materials,
 				isRecyclable: product.isRecyclable,
 				recommendations: recommendationBarcodes,
 				productScore: product.productScore,
@@ -134,8 +147,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 			// If the product does not exist, return an appropriate error message
 			res.status(404).send('Product with the given barcode does not exist');
 		}
-	}
-	catch (error) {
+	} catch (error) {
 		// Handle any other errors that occur during the process
 		res.status(500).send('An error occurred while retrieving the product information');
 		console.log(error);
