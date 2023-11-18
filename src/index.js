@@ -97,6 +97,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 				};
 				const recommendationOutput = {
 					productID: recommendation.productID,
+					barcode: recommendation.barcode,
 					productName: recommendation.productName,
 					productDescription: recommendation.productDescription,
 					productImage: `${config.url}/products/${recommendation.barcode}.png`,
@@ -118,6 +119,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 			};
 			res.json({
 				productID: product.productID,
+				barcode: product.barcode,
 				productName: product.productName,
 				productDescription: product.productDescription,
 				productImage: `${config.url}/products/${product.barcode}.png`,
@@ -138,6 +140,10 @@ app.get('/v1/products/:barcode', async (req, res) => {
 		res.status(500).send('An error occurred while retrieving the product information');
 		console.log(error);
 	}
+});
+
+app.get('/', (req, res) => {
+	res.send('Welcome to the KReatHoN 2023 Fressnapf in spe API!');
 });
 
 // Sync the Sequelize instance with the database and create the tables if they do not exist
