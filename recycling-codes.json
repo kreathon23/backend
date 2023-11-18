@@ -4,154 +4,264 @@
         "title": "PET(E)",
         "type": "Polyethylene terephthalate",
         "examples": "Polyester fibers, soft drink bottles, food containers (also see plastic bottles)",
-        "score": 7
+        "score": 7,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": 2,
         "title": "PEHD or HDPE",
         "type": "High-density polyethylene",
         "examples": "Plastic milk containers, plastic bags, bottle caps, trash cans, oil cans, plastic lumber, toolboxes, supplement containers",
-        "score": 8
+        "score": 8,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": 3,
         "title": "PVC",
         "type": "Polyvinyl chloride",
         "examples": "Window frames, bottles for chemicals, flooring, plumbing pipes",
-        "score": 3
+        "score": 3,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": 4,
         "title": "PELD or LDPE",
         "type": "Low-density polyethylene",
         "examples": "Plastic bags, Ziploc bags, buckets, squeeze bottles, plastic tubes, chopping boards",
-        "score": 6
+        "score": 6,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": 5,
         "title": "PP",
         "type": "Polypropylene",
         "examples": "Flower pots, bumpers, car interior trim, industrial fibers, carry-out beverage cups, microwavable food containers, DVD keep cases",
-        "score": 7
+        "score": 7,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": 6,
         "title": "PS",
         "type": "Polystyrene",
         "examples": "Toys, video cassettes, ashtrays, trunks, beverage/food coolers, beer cups, wine and champagne cups, carry-out food containers, Styrofoam",
-        "score": 5
+        "score": 5,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": 7,
         "title": "O (Other)",
         "type": "All other plastics",
         "examples": "Polycarbonate (PC), polyamide (PA), styrene acrylonitrile (SAN), acrylic plastics/polyacrylonitrile (PAN), bioplastics",
-        "score": 2
+        "score": 2,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": -1,
         "title": null,
         "type": "Acrylonitrile butadiene styrene",
         "examples": "Monitor/TV cases, coffee makers, cell phones, calculators, most computer plastic, Lego bricks, most FFF 3D printed parts that are not bioplastic such as PLA",
-        "score": 4
+        "score": 4,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": -1,
         "title": null,
         "type": "Polyamide (Nylon)",
         "examples": "Toothbrush bristles, socks, stockings, etc.",
-        "score": 5
+        "score": 5,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": 8,
         "title": "Lead",
         "type": "Lead-acid battery",
         "examples": "Car batteries",
-        "score": 6
+        "score": 6,
+        "bin": {
+            "id": "recycling-center",
+            "german": "Wertstoffhof",
+            "colorHex": "#00ff00"
+        }
     },
     {
         "num": 9,
         "title": "Alkaline",
         "type": "Alkaline battery",
         "examples": "TV Remote batteries, flashlight batteries",
-        "score": 5
+        "score": 5,
+        "bin": {
+            "id": "special-waste",
+            "german": "Sonderm\u00fcll",
+            "colorHex": "#ff0000"
+        }
     },
     {
         "num": 10,
         "title": "NiCD",
         "type": "Nickel-cadmium battery",
         "examples": "Older batteries",
-        "score": 4
+        "score": 4,
+        "bin": {
+            "id": "special-waste",
+            "german": "Sonderm\u00fcll",
+            "colorHex": "#ff0000"
+        }
     },
     {
         "num": 11,
         "title": "NiMH",
         "type": "Nickel-metal hydride battery",
         "examples": null,
-        "score": 6
+        "score": 6,
+        "bin": {
+            "id": "special-waste",
+            "german": "Sonderm\u00fcll",
+            "colorHex": "#ff0000"
+        }
     },
     {
         "num": 12,
         "title": "Li",
         "type": "Lithium battery",
         "examples": "Cell phone batteries, computer batteries, camera batteries",
-        "score": 3
+        "score": 3,
+        "bin": {
+            "id": "special-waste",
+            "german": "Sonderm\u00fcll",
+            "colorHex": "#ff0000"
+        }
     },
     {
         "num": 13,
         "title": "SO(Z)",
         "type": "Silver-oxide battery",
         "examples": null,
-        "score": 5
+        "score": 5,
+        "bin": {
+            "id": "special-waste",
+            "german": "Sonderm\u00fcll",
+            "colorHex": "#ff0000"
+        }
     },
     {
         "num": 14,
         "title": "CZ",
         "type": "Zinc-carbon battery",
         "examples": "Flashlight batteries",
-        "score": 6
+        "score": 6,
+        "bin": {
+            "id": "special-waste",
+            "german": "Sonderm\u00fcll",
+            "colorHex": "#ff0000"
+        }
     },
     {
         "num": 20,
         "title": "PAP",
         "type": "Corrugated fiberboard (cardboard)",
         "examples": "Cardboard boxes",
-        "score": 9
+        "score": 9,
+        "bin": {
+            "id": "blue-bin",
+            "german": "Blaue Tonne",
+            "colorHex": "#0000ff"
+        }
     },
     {
         "num": 21,
         "title": "PAP",
         "type": "Non-corrugated fiberboard (paperboard)",
         "examples": "Cereal and snack boxes",
-        "score": 9
+        "score": 9,
+        "bin": {
+            "id": "blue-bin",
+            "german": "Blaue Tonne",
+            "colorHex": "#0000ff"
+        }
     },
     {
         "num": 22,
         "title": "PAP",
         "type": "Paper",
         "examples": "Newspaper, books, magazines, wrapping paper, wallpaper, paper bags, paper straws",
-        "score": 9
+        "score": 9,
+        "bin": {
+            "id": "blue-bin",
+            "german": "Blaue Tonne",
+            "colorHex": "#0000ff"
+        }
     },
     {
         "num": 40,
         "title": "FE",
         "type": "Steel",
         "examples": "Food cans",
-        "score": 8
+        "score": 8,
+        "bin": {
+            "id": "recycling-center",
+            "german": "Wertstoffhof",
+            "colorHex": "#00ff00"
+        }
     },
     {
         "num": 41,
         "title": "ALU",
         "type": "Aluminium",
         "examples": "Soft drink cans, deodorant cans, disposable food containers, aluminium foil, heat sinks",
-        "score": 8
+        "score": 8,
+        "bin": {
+            "id": "yellow-bag",
+            "german": "Gelber Sack",
+            "colorHex": "#f7f700"
+        }
     },
     {
         "num": 50,
         "title": "FOR",
         "type": "Wood",
         "examples": "Furniture, chopping boards, brooms, pencils, cocktail sticks, wooden spoons",
-        "score": 7
+        "score": 7,
+        "bin": {
+            "id": "bio-bin",
+            "german": "Biotonne",
+            "colorHex": "#00cc00"
+        }
     },
     {
         "num": 51,
@@ -165,189 +275,324 @@
         "title": "COT",
         "type": "Cotton",
         "examples": "Towels, t-shirts, cotton buds/swabs, cotton pads",
-        "score": 7
+        "score": 7,
+        "bin": {
+            "id": "clothes-container",
+            "german": "Altkleidercontainer",
+            "colorHex": "#ff00ff"
+        }
     },
     {
         "num": 61,
         "title": "TEX",
         "type": "Jute",
         "examples": "Clothing",
-        "score": 7
+        "score": 7,
+        "bin": {
+            "id": "clothes-container",
+            "german": "Altkleidercontainer",
+            "colorHex": "#ff00ff"
+        }
     },
     {
         "num": -1,
         "title": "TEX",
         "type": "Other textiles",
         "examples": null,
-        "score": 5
+        "score": 5,
+        "bin": {
+            "id": "clothes-container",
+            "german": "Altkleidercontainer",
+            "colorHex": "#ff00ff"
+        }
     },
     {
         "num": 70,
         "title": "GL",
         "type": "Clear Glass",
         "examples": "Food storage jars",
-        "score": 9
+        "score": 9,
+        "bin": {
+            "id": "glass-container",
+            "german": "Glascontainer",
+            "colorHex": "#ff9900"
+        }
     },
     {
         "num": 71,
         "title": "GL",
         "type": "Green Glass",
         "examples": "Wine bottles",
-        "score": 9
+        "score": 9,
+        "bin": {
+            "id": "glass-container",
+            "german": "Glascontainer",
+            "colorHex": "#ff9900"
+        }
     },
     {
         "num": 72,
         "title": "GL",
         "type": "Brown Glass",
         "examples": "Beer, light-sensitive products",
-        "score": 9
+        "score": 9,
+        "bin": {
+            "id": "glass-container",
+            "german": "Glascontainer",
+            "colorHex": "#ff9900"
+        }
     },
     {
         "num": 73,
         "title": "GL",
         "type": "Dark Sort Glass",
         "examples": null,
-        "score": 9
+        "score": 9,
+        "bin": {
+            "id": "glass-container",
+            "german": "Glascontainer",
+            "colorHex": "#ff9900"
+        }
     },
     {
         "num": 74,
         "title": "GL",
         "type": "Light Sort Glass",
         "examples": null,
-        "score": 9
+        "score": 9,
+        "bin": {
+            "id": "glass-container",
+            "german": "Glascontainer",
+            "colorHex": "#ff9900"
+        }
     },
     {
         "num": 75,
         "title": "GL",
         "type": "Light Leaded Glass",
         "examples": "Televisions, high-end electronics display glass like in calculators",
-        "score": 2
+        "score": 2,
+        "bin": {
+            "id": "glass-container",
+            "german": "Glascontainer",
+            "colorHex": "#ff9900"
+        }
     },
     {
         "num": 76,
         "title": "GL",
         "type": "Leaded Glass",
         "examples": "Older televisions, ash trays, older beverage holders",
-        "score": 1
+        "score": 1,
+        "bin": {
+            "id": "glass-container",
+            "german": "Glascontainer",
+            "colorHex": "#ff9900"
+        }
     },
     {
         "num": 77,
         "title": "GL",
         "type": "Copper Mixed/Copper Backed Glass",
         "examples": "Electronics, LCD display heads, clocks, watches",
-        "score": 2
+        "score": 2,
+        "bin": {
+            "id": "recycling-center",
+            "german": "Wertstoffhof",
+            "colorHex": "#00ff00"
+        }
     },
     {
         "num": 78,
         "title": "GL",
         "type": "Silver Mixed/Silver Backed Glass",
         "examples": "Mirrors, formal table settings",
-        "score": 3
+        "score": 3,
+        "bin": {
+            "id": "recycling-center",
+            "german": "Wertstoffhof",
+            "colorHex": "#00ff00"
+        }
     },
     {
         "num": 79,
         "title": "GL",
         "type": "Gold Mixed/Gold Backed Glass",
         "examples": "Computer glass, formal table settings",
-        "score": 1
+        "score": 1,
+        "bin": {
+            "id": "recycling-center",
+            "german": "Wertstoffhof",
+            "colorHex": "#00ff00"
+        }
     },
     {
         "num": 80,
         "title": "Paper",
         "type": "Paper and miscellaneous metals",
         "examples": null,
-        "score": 2
+        "score": 2,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 81,
         "title": "PapPet",
         "type": "Paper + plastic",
         "examples": "Consumer packaging, pet food bags, cold store grocery bags, Icecream containers, cardboard cans, disposable plates",
-        "score": 2
+        "score": 2,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 82,
         "title": null,
         "type": "Paper and fibreboard/Aluminium",
         "examples": null,
-        "score": 3
+        "score": 3,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 83,
         "title": null,
         "type": "Paper and fibreboard/Tinplate",
         "examples": null,
-        "score": 3
+        "score": 3,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 84,
         "title": "C/PAP (or PapAl)",
         "type": "Paper and cardboard/plastic/aluminium",
         "examples": "Liquid storage containers, juice boxes, cardboard cans, cigarette pack liners, gum wrappers, cartridge shells for blanks, fireworks colouring material, Tetra Brik.",
-        "score": 1
+        "score": 1,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 85,
         "title": null,
         "type": "Paper and fibreboard/Plastic/Aluminium/Tinplate",
         "examples": null,
-        "score": 1
+        "score": 1,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 87,
         "title": "CSL (Card-Stock Laminate)",
         "type": "Biodegradable plastic",
         "examples": "Laminating material, special occasion cards, bookmarks, business cards, flyers/advertising",
-        "score": 7
+        "score": 7,
+        "bin": {
+            "id": "bio-bin",
+            "german": "Biotonne",
+            "colorHex": "#00cc00"
+        }
     },
     {
         "num": 90,
         "title": null,
         "type": "Plastics/Aluminium",
         "examples": "Plastic toothpaste tubes/some vacuum packed coffee bags",
-        "score": 2
+        "score": 2,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 91,
         "title": null,
         "type": "Plastic/Tinplate",
         "examples": null,
-        "score": 3
+        "score": 3,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 92,
         "title": null,
         "type": "Plastic/Miscellaneous metals",
         "examples": null,
-        "score": 2
+        "score": 2,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 95,
         "title": null,
         "type": "Glass/Plastic",
         "examples": null,
-        "score": 2
+        "score": 2,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 96,
         "title": null,
         "type": "Glass/Aluminium",
         "examples": null,
-        "score": 4
+        "score": 4,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 97,
         "title": null,
         "type": "Glass/Tinplate",
         "examples": null,
-        "score": 3
+        "score": 3,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 98,
         "title": null,
         "type": "Glass/Miscellaneous metals",
         "examples": null,
-        "score": 2
+        "score": 2,
+        "bin": {
+            "id": "recycling",
+            "german": "Wertstofftrennung",
+            "colorHex": "#68c47f"
+        }
     },
     {
         "num": 99,
