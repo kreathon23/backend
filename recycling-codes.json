@@ -9,7 +9,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Polyethylenterephthalat",
+        "examplesGerman": "Polyesterfasern, Erfrischungsgetränkeflaschen, Lebensmittelbehälter",
+        "ecoInfoGerman": "Kann beim Abbau Schadstoffe freisetzen und verursacht bei nicht fachgerechter Entsorgung Umweltverschmutzung."
     },
     {
         "num": 2,
@@ -21,7 +24,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Hochdichtes Polyethylen",
+        "examplesGerman": "Kunststoff-Milchbehälter, Plastiktüten, Flaschendeckel, Mülleimer, Ölkanister, Kunststoffholz, Werkzeugkoffer, Ergänzungsbehälter",
+        "ecoInfoGerman": "Ist recycelbar, jedoch führt unsachgemäße Entsorgung zu Umweltbelastungen und langfristigen Schäden."
     },
     {
         "num": 3,
@@ -33,7 +39,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Polyvinylchlorid",
+        "examplesGerman": "Fensterrahmen, Chemikalienflaschen, Bodenbeläge, Rohrleitungen",
+        "ecoInfoGerman": "Die Herstellung und Entsorgung von PVC kann schädliche Chemikalien freisetzen, was umweltschädlich ist."
     },
     {
         "num": 4,
@@ -45,7 +54,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Niederdruck-Polyethylen",
+        "examplesGerman": "Plastiktüten, Ziploc-Beutel, Eimer, Quetschflaschen, Kunststoffrohre, Schneidebretter",
+        "ecoInfoGerman": "Recyclingfähig, aber oft in der Umwelt zu finden, wo es zur Verschmutzung beiträgt und Tiere gefährdet."
     },
     {
         "num": 5,
@@ -57,7 +69,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Polypropylen",
+        "examplesGerman": "Blumentöpfe, Stoßstangen, Autoinnenverkleidung, Industriefasern, Transport-Getränkebecher, mikrowellengeeignete Lebensmittelbehälter, DVD-Hüllen",
+        "ecoInfoGerman": "Schwer abbaubar und kann, wenn nicht recycelt, zu langfristigen Umweltproblemen führen."
     },
     {
         "num": 6,
@@ -69,7 +84,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Polystyrol",
+        "examplesGerman": "Spielsachen, Videokassetten, Aschenbecher, Koffer, Getränke-/Speisekühler, Bierbecher, Wein- und Sektgläser, Transport-Lebensmittelbehälter, Styropor",
+        "ecoInfoGerman": "Kann giftige Stoffe absondern und ist schwer zu recyceln, häufig in der Umwelt anzutreffen."
     },
     {
         "num": 7,
@@ -81,7 +99,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Alle anderen Kunststoffe",
+        "examplesGerman": "Polycarbonat (PC), Polyamid (PA), Styrol-Acrylnitril (SAN), Acryl-Kunststoffe/Polyacrylnitril (PAN), Biokunststoffe",
+        "ecoInfoGerman": "Umweltauswirkungen variieren, aber viele sind schwierig zu recyceln und können schädlich sein, wenn sie falsch entsorgt werden."
     },
     {
         "num": -1,
@@ -93,7 +114,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Acrylnitril-Butadien-Styrol",
+        "examplesGerman": "Monitor-/TV-Gehäuse, Kaffeemaschinen, Handys, Taschenrechner, meiste Computerkunststoffe, Lego-Steine, die meisten FFF 3D-gedruckten Teile, die kein Bioplastik sind, wie PLA",
+        "ecoInfoGerman": "ABS ist langlebig, aber schwierig zu recyceln und führt bei Abbau und Verbrennung zur Freisetzung giftiger Chemikalien."
     },
     {
         "num": -1,
@@ -105,7 +129,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Polyamid (Nylon)",
+        "examplesGerman": "Zahnbürstenborsten, Socken, Strümpfe usw.",
+        "ecoInfoGerman": "Wenn es in der Umwelt landet, kann es lange Persistenz zeigen und Mikroplastik erzeugen."
     },
     {
         "num": 8,
@@ -117,7 +144,10 @@
             "id": "recycling-center",
             "german": "Wertstoffhof",
             "colorHex": "#00ff00"
-        }
+        },
+        "typeGerman": "Blei-Säure-Batterie",
+        "examplesGerman": "Autobatterien",
+        "ecoInfoGerman": "Enthalten giftiges Blei und Schwefelsäure, können bei unsachgemäßer Entsorgung schädliche Umweltbelastungen verursachen."
     },
     {
         "num": 9,
@@ -127,9 +157,12 @@
         "score": 5,
         "bin": {
             "id": "special-waste",
-            "german": "Sonderm\u00fcll",
+            "german": "Sondermüll",
             "colorHex": "#ff0000"
-        }
+        },
+        "typeGerman": "Alkali-Mangan-Batterie",
+        "examplesGerman": "Fernbedienungsbatterien, Taschenlampenbatterien",
+        "ecoInfoGerman": "Sind gefährlicher Abfall und enthalten Schwermetalle, die Umweltbelastungen verursachen können."
     },
     {
         "num": 10,
@@ -139,9 +172,12 @@
         "score": 4,
         "bin": {
             "id": "special-waste",
-            "german": "Sonderm\u00fcll",
+            "german": "Sondermüll",
             "colorHex": "#ff0000"
-        }
+        },
+        "typeGerman": "Nickel-Cadmium-Batterie",
+        "examplesGerman": "Ältere Batterien",
+        "ecoInfoGerman": "Enthalten hochgiftiges Cadmium, das bei unsachgemäßer Entsorgung schwere Umwelt- und Gesundheitsschäden verursachen kann."
     },
     {
         "num": 11,
@@ -151,9 +187,12 @@
         "score": 6,
         "bin": {
             "id": "special-waste",
-            "german": "Sonderm\u00fcll",
+            "german": "Sondermüll",
             "colorHex": "#ff0000"
-        }
+        },
+        "typeGerman": "Nickel-Metallhydrid-Batterie",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Umweltfreundlicher als Nickel-Cadmium, aber Recycling ist wichtig, um Ressourcen zu schonen."
     },
     {
         "num": 12,
@@ -163,9 +202,12 @@
         "score": 3,
         "bin": {
             "id": "special-waste",
-            "german": "Sonderm\u00fcll",
+            "german": "Sondermüll",
             "colorHex": "#ff0000"
-        }
+        },
+        "typeGerman": "Lithium-Batterie",
+        "examplesGerman": "Handybatterien, Computerbatterien, Kamerabatterien",
+        "ecoInfoGerman": "Gefahr der Umweltverschmutzung besteht besonders bei unsachgemäßer Entsorgung aufgrund von Chemikalien."
     },
     {
         "num": 13,
@@ -175,9 +217,12 @@
         "score": 5,
         "bin": {
             "id": "special-waste",
-            "german": "Sonderm\u00fcll",
+            "german": "Sondermüll",
             "colorHex": "#ff0000"
-        }
+        },
+        "typeGerman": "Silberoxid-Batterie",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Enthält Silber und ist bei unsachgemäßer Entsorgung umweltschädlich, Recycling ist notwendig."
     },
     {
         "num": 14,
@@ -187,9 +232,12 @@
         "score": 6,
         "bin": {
             "id": "special-waste",
-            "german": "Sonderm\u00fcll",
+            "german": "Sondermüll",
             "colorHex": "#ff0000"
-        }
+        },
+        "typeGerman": "Zink-Kohle-Batterie",
+        "examplesGerman": "Taschenlampenbatterien",
+        "ecoInfoGerman": "Zink und Kohle sind weniger schädlich, doch umweltgerechtes Recycling wird empfohlen."
     },
     {
         "num": 20,
@@ -201,7 +249,10 @@
             "id": "blue-bin",
             "german": "Blaue Tonne",
             "colorHex": "#0000ff"
-        }
+        },
+        "typeGerman": "Wellpappe (Karton)",
+        "examplesGerman": "Kartons",
+        "ecoInfoGerman": "Gut recycelbar, aber bei Deponierung trägt es zur Methanemission bei, was klimaschädlich ist."
     },
     {
         "num": 21,
@@ -213,7 +264,10 @@
             "id": "blue-bin",
             "german": "Blaue Tonne",
             "colorHex": "#0000ff"
-        }
+        },
+        "typeGerman": "Nicht gewellte Pappe",
+        "examplesGerman": "Müsli- und Snackboxen",
+        "ecoInfoGerman": "Leicht recycelbar und kompostierbar, belastet aber die Umwelt, wenn es nicht ordnungsgemäß entsorgt wird."
     },
     {
         "num": 22,
@@ -225,7 +279,10 @@
             "id": "blue-bin",
             "german": "Blaue Tonne",
             "colorHex": "#0000ff"
-        }
+        },
+        "typeGerman": "Papier",
+        "examplesGerman": "Zeitungen, Bücher, Zeitschriften, Geschenkpapier, Tapeten, Papiertüten, Papierstrohhalme",
+        "ecoInfoGerman": "Recycling reduziert die Abholzung und den Energieverbrauch im Vergleich zur Neuproduktion, bei Deponierung entstehen Treibhausgase."
     },
     {
         "num": 40,
@@ -237,7 +294,10 @@
             "id": "recycling-center",
             "german": "Wertstoffhof",
             "colorHex": "#00ff00"
-        }
+        },
+        "typeGerman": "Stahl",
+        "examplesGerman": "Nahrungsmitteldosen",
+        "ecoInfoGerman": "Gut recycelbar, erfordert jedoch bei der Herstellung einen hohen Energieaufwand."
     },
     {
         "num": 41,
@@ -249,7 +309,10 @@
             "id": "yellow-bag",
             "german": "Gelber Sack",
             "colorHex": "#f7f700"
-        }
+        },
+        "typeGerman": "Aluminium",
+        "examplesGerman": "Getränkedosen, Deodorant-Dosen, Einweg-Lebensmittelbehälter, Aluminiumfolie, Wärmeableiter",
+        "ecoInfoGerman": "Sehr energieaufwändig in der Gewinnung, aber gut recycelbar und kann so Energie sparen."
     },
     {
         "num": 50,
@@ -261,14 +324,20 @@
             "id": "bio-bin",
             "german": "Biotonne",
             "colorHex": "#00cc00"
-        }
+        },
+        "typeGerman": "Holz",
+        "examplesGerman": "Möbel, Schneidbretter, Besen, Bleistifte, Cocktailstäbchen, Holzlöffel",
+        "ecoInfoGerman": "Natürlich und biologisch abbaubar, aber nicht nachhaltig, wenn aus nicht nachhaltiger Abholzung stammend."
     },
     {
         "num": 51,
         "title": "FOR",
         "type": "Cork",
         "examples": "Bottle stoppers, place mats, construction material",
-        "score": 8
+        "score": 8,
+        "typeGerman": "Kork",
+        "examplesGerman": "Flaschenverschlüsse, Platzsets, Baumaterial",
+        "ecoInfoGerman": "Nachhaltig, wenn richtig geerntet, biologisch abbaubar und recycelbar."
     },
     {
         "num": 60,
@@ -280,7 +349,10 @@
             "id": "clothes-container",
             "german": "Altkleidercontainer",
             "colorHex": "#ff00ff"
-        }
+        },
+        "typeGerman": "Baumwolle",
+        "examplesGerman": "Handtücher, T-Shirts, Wattestäbchen, Wattepads",
+        "ecoInfoGerman": "Natürlich, aber der Anbau kann durch hohen Wasserverbrauch und Pestizideinsatz umweltbelastend sein."
     },
     {
         "num": 61,
@@ -292,7 +364,10 @@
             "id": "clothes-container",
             "german": "Altkleidercontainer",
             "colorHex": "#ff00ff"
-        }
+        },
+        "typeGerman": "Jute",
+        "examplesGerman": "Kleidung",
+        "ecoInfoGerman": "Biologisch abbaubar und umweltfreundlich in der Produktion, allerdings oft weniger langlebig."
     },
     {
         "num": -1,
@@ -304,7 +379,10 @@
             "id": "clothes-container",
             "german": "Altkleidercontainer",
             "colorHex": "#ff00ff"
-        }
+        },
+        "typeGerman": "Andere Textilien",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Die Umweltauswirkungen variieren je nach Material und Herstellungspraxis."
     },
     {
         "num": 70,
@@ -316,7 +394,10 @@
             "id": "glass-container",
             "german": "Glascontainer",
             "colorHex": "#ff9900"
-        }
+        },
+        "typeGerman": "Klares Glas",
+        "examplesGerman": "Lebensmittelaufbewahrungsgläser",
+        "ecoInfoGerman": "Unbegrenzt recycelbar ohne Qualitätsverlust, aber energieintensiv in der Herstellung."
     },
     {
         "num": 71,
@@ -328,7 +409,10 @@
             "id": "glass-container",
             "german": "Glascontainer",
             "colorHex": "#ff9900"
-        }
+        },
+        "typeGerman": "Grünes Glas",
+        "examplesGerman": "Weinflaschen",
+        "ecoInfoGerman": "Einfach zu recyceln und umweltfreundlicher als der Abbau und die Verarbeitung von neuen Rohstoffen."
     },
     {
         "num": 72,
@@ -340,7 +424,10 @@
             "id": "glass-container",
             "german": "Glascontainer",
             "colorHex": "#ff9900"
-        }
+        },
+        "typeGerman": "Braunes Glas",
+        "examplesGerman": "Bier, lichtempfindliche Produkte",
+        "ecoInfoGerman": "Ähnlich wie bei klarem Glas ist Recycling bevorzugt, da es weniger Energie verbraucht als neue Produktion."
     },
     {
         "num": 73,
@@ -352,7 +439,10 @@
             "id": "glass-container",
             "german": "Glascontainer",
             "colorHex": "#ff9900"
-        }
+        },
+        "typeGerman": "Dunkles Sortierglas",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Das Recycling hilft, die Energie zu reduzieren, die für das Schmelzen und Verarbeiten notwendig ist."
     },
     {
         "num": 74,
@@ -364,7 +454,10 @@
             "id": "glass-container",
             "german": "Glascontainer",
             "colorHex": "#ff9900"
-        }
+        },
+        "typeGerman": "Helles Sortierglas",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Auch hier ist Recycling die umweltfreundlichere Option im Vergleich zur Neuproduktion."
     },
     {
         "num": 75,
@@ -376,7 +469,10 @@
             "id": "glass-container",
             "german": "Glascontainer",
             "colorHex": "#ff9900"
-        }
+        },
+        "typeGerman": "Leichtes Bleiglas",
+        "examplesGerman": "Fernsehgeräte, hochwertige Elektronik-Displaygläser wie in Taschenrechnern",
+        "ecoInfoGerman": "Enthält Blei, dessen Gewinnung und Entsorgung umweltschädlich sein kann."
     },
     {
         "num": 76,
@@ -388,7 +484,10 @@
             "id": "glass-container",
             "german": "Glascontainer",
             "colorHex": "#ff9900"
-        }
+        },
+        "typeGerman": "Bleiglas",
+        "examplesGerman": "Ältere Fernsehgeräte, Aschenbecher, ältere Getränkehalter",
+        "ecoInfoGerman": "Blei ist schädlich für Umwelt und Gesundheit; Entsorgung und Recycling erfordern besondere Sorgfalt."
     },
     {
         "num": 77,
@@ -400,7 +499,10 @@
             "id": "recycling-center",
             "german": "Wertstoffhof",
             "colorHex": "#00ff00"
-        }
+        },
+        "typeGerman": "Kupfergemischtes/-hinterlegtes Glas",
+        "examplesGerman": "Elektronik, LCD-Anzeigen, Uhren, Armbanduhren",
+        "ecoInfoGerman": "Kupfergewinnung kann umweltschädlich sein; Recycling ist nötig, um Belastungen zu vermeiden."
     },
     {
         "num": 78,
@@ -412,7 +514,10 @@
             "id": "recycling-center",
             "german": "Wertstoffhof",
             "colorHex": "#00ff00"
-        }
+        },
+        "typeGerman": "Silbergemischtes/-hinterlegtes Glas",
+        "examplesGerman": "Spiegel, formelle Tischsettings",
+        "ecoInfoGerman": "Da Silber abgebaut wird, ist es wichtig, solche Produkte zu recyceln, um Umweltbelastungen zu reduzieren."
     },
     {
         "num": 79,
@@ -424,7 +529,10 @@
             "id": "recycling-center",
             "german": "Wertstoffhof",
             "colorHex": "#00ff00"
-        }
+        },
+        "typeGerman": "Goldgemischtes/-hinterlegtes Glas",
+        "examplesGerman": "Computerglas, formelle Tischsettings",
+        "ecoInfoGerman": "Goldabbau ist extrem umweltschädlich; Recycling von Elektronik hilft, diese Auswirkungen zu minimieren."
     },
     {
         "num": 80,
@@ -436,7 +544,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Papier und verschiedene Metalle",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Kombinierte Materialien sind oft schwieriger zu recyceln und können mehr Umweltbelastungen verursachen."
     },
     {
         "num": 81,
@@ -448,7 +559,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Papier + Kunststoff",
+        "examplesGerman": "Verbraucherverpackungen, Haustierfutterbeutel, Kühlhaus-Einkaufstaschen, Eiscremebehälter, Getränkedosen aus Karton, Wegwerfteller",
+        "ecoInfoGerman": "Kombinationsmaterialien sind schwer zu trennen und zu recyceln, verursachen oft Abfall."
     },
     {
         "num": 82,
@@ -460,7 +574,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Papier und Faserplatte/Aluminium",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Die Kombination aus Papier und Aluminium kann das Recycling erschweren und führt zu mehr Energieverbrauch bei der Trennung."
     },
     {
         "num": 83,
@@ -472,7 +589,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Papier und Faserplatte/Weißblech",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Weißblech ist gut recycelbar, aber die Trennung von Papier kann kompliziert sein, was die Umweltbelastung erhöht."
     },
     {
         "num": 84,
@@ -484,7 +604,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Papier und Karton/Kunststoff/Aluminium",
+        "examplesGerman": "Behälter für Flüssigkeiten, Saftkartons, Kartondosen, Zigarettenpackungsinnenfutter, Kaugummiverpackungen, Patronenhülsen für Platzpatronen, Farbmaterial für Feuerwerke, Tetra Brik.",
+        "ecoInfoGerman": "Mehrstoffverpackungen sind schlechter zu recyceln und belasten die Umwelt durch aufwendige Trenn- und Reinigungsprozesse."
     },
     {
         "num": 85,
@@ -496,7 +619,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Papier und Faserplatte/Kunststoff/Aluminium/Weißblech",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Mehrschichtige Materialien sind eine Herausforderung im Recyclingprozess und können zu erhöhtem Ressourcenverbrauch führen."
     },
     {
         "num": 87,
@@ -508,7 +634,10 @@
             "id": "bio-bin",
             "german": "Biotonne",
             "colorHex": "#00cc00"
-        }
+        },
+        "typeGerman": "Biologisch abbaubarer Kunststoff",
+        "examplesGerman": "Laminiermaterial, Grußkarten für besondere Anlässe, Lesezeichen, Visitenkarten, Flyer/Werbung",
+        "ecoInfoGerman": "Biologisch abbaubare Kunststoffe verringern die Umweltbelastung, können aber unter Umständen nur unter bestimmten Bedingungen abgebaut werden."
     },
     {
         "num": 90,
@@ -520,7 +649,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Kunststoffe/Aluminium",
+        "examplesGerman": "Kunststoff-Zahnpastatuben/einige vakuumverpackte Kaffeetüten",
+        "ecoInfoGerman": "Komposite aus Kunststoff und Aluminium sind schwierig zu recyceln und erhöhen die Umweltbelastung durch aufwändige Trennprozesse."
     },
     {
         "num": 91,
@@ -532,7 +664,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Kunststoff/Weißblech",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Verbindungen aus Kunststoff und Weißblech können das Recycling erschweren, was zu einem höheren Energie- und Ressourcenverbrauch führt."
     },
     {
         "num": 92,
@@ -544,7 +679,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Kunststoff/Verschiedene Metalle",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Der Gebrauch verschiedener Metalle in Kunststoffen kann das Recycling erschweren und somit die Umweltbelastung erhöhen."
     },
     {
         "num": 95,
@@ -556,7 +694,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Glas/Kunststoff",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Die Kombination von Glas und Kunststoff kann zu Problemen im Recyclingprozess führen und die Umwelteffizienz reduzieren."
     },
     {
         "num": 96,
@@ -568,7 +709,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Glas/Aluminium",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Obwohl beide Materialien recycelbar sind, kann ihre Kombination komplexe Trennprozesse erfordern und die Umweltbelastung steigern."
     },
     {
         "num": 97,
@@ -580,7 +724,10 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Glas/Weißblech",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Glas und Weißblech sind einzeln gut recycelbar, doch wenn sie kombiniert werden, können sie die Umwelt durch schwierige Trennprozesse mehr belasten."
     },
     {
         "num": 98,
@@ -592,13 +739,19 @@
             "id": "recycling",
             "german": "Wertstofftrennung",
             "colorHex": "#68c47f"
-        }
+        },
+        "typeGerman": "Glas/Verschiedene Metalle",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Die Nutzung verschiedener Metalle in Verbindung mit Glas kann bei der Entsorgung zu Problemen führen und ist umwelttechnisch bedenklich."
     },
     {
         "num": 99,
         "title": null,
         "type": "other",
         "examples": null,
-        "score": 1
+        "score": 1,
+        "typeGerman": "andere",
+        "examplesGerman": null,
+        "ecoInfoGerman": "Andere nicht spezifizierte Materialien können je nach Zusammensetzung und Recyclingfähigkeit unterschiedliche Umweltauswirkungen haben."
     }
 ]
