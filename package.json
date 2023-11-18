@@ -4,7 +4,8 @@
   "description": "Fressnapf in Spe Backend Server",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "prod": "node src/index.js"
   },
   "keywords": [],
   "author": "JH220",
