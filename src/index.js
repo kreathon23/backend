@@ -2,7 +2,12 @@
 const express = require('express');
 const app = express();
 const config = require('../config.json');
+const recycling_codes = require('../recycling-codes.json');
 const { Sequelize, DataTypes } = require('sequelize');
+
+// Enable CORS for all requests
+const cors = require('cors');
+app.use(cors());
 
 // Create a Sequelize instance connected to the database as specified in the config.json file
 const sequelize = new Sequelize(config.databaseURL);
@@ -77,14 +82,47 @@ app.get('/v1/products/:barcode', async (req, res) => {
 			// array of recommendation barcode IDs
 			var recommendationBarcodes = [];
 			for (var i = 0; i < recommendations.length; i++) {
-				recommendationBarcodes.push(recommendations[i].recommendation);
+				const recommendationID = recommendations[i].recommendation;
+				const recommendation = await Product.findOne({
+					where: {
+						productID: recommendationID,
+					},
+				});
+				// find in recycling_codes.json the material that matches the recycling code, array of objects with num value
+				const material = recycling_codes.find(o => o.num === product.recyclingCode);
+				const materialRes = !material ? null : {
+					'code': product.recyclingCode,
+					'type': material.type,
+					'examples': material.examples,
+				};
+				const recommendationOutput = {
+					productID: recommendation.productID,
+					productName: recommendation.productName,
+					productDescription: recommendation.productDescription,
+					productImage: `${config.url}/products/${recommendation.barcode}.png`,
+					packagingType: recommendation.packagingType,
+					material: materialRes,
+					isRecyclable: recommendation.isRecyclable,
+					recommendations: [],
+					productScore: recommendation.productScore,
+				};
+				recommendationBarcodes.push(recommendationOutput);
 			}
+
+			// find in recycling_codes.json the material that matches the recycling code, array of objects with num value
+			const material = recycling_codes.find(o => o.num === product.recyclingCode);
+			const materialRes = !material ? null : {
+				'code': product.recyclingCode,
+				'type': material.type,
+				'examples': material.examples,
+			};
 			res.json({
 				productID: product.productID,
 				productName: product.productName,
 				productDescription: product.productDescription,
+				productImage: `${config.url}/products/${product.barcode}.png`,
 				packagingType: product.packagingType,
-				recyclingCode: product.recyclingCode,
+				material: materialRes,
 				isRecyclable: product.isRecyclable,
 				recommendations: recommendationBarcodes,
 				productScore: product.productScore,
@@ -98,11 +136,12 @@ app.get('/v1/products/:barcode', async (req, res) => {
 	catch (error) {
 		// Handle any other errors that occur during the process
 		res.status(500).send('An error occurred while retrieving the product information');
+		console.log(error);
 	}
 });
 
 // Sync the Sequelize instance with the database and create the tables if they do not exist
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync().then(() => {
 	console.log('Database and tables created');
 });
 
