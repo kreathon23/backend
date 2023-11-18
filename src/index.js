@@ -100,7 +100,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 						'code': code,
 						'type': material.type,
 						'examples': material.examples,
-						'description': null,
+						'bin': null,
 					};
 				});
 				const recommendationOutput = {
@@ -118,8 +118,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 				recommendationBarcodes.push(recommendationOutput);
 			}
 
-			const recyclingCodesArr = product.recyclingCodes.split(',');
-			const materials = recyclingCodesArr.map(code => {
+			const materials = !product.recyclingCodes ? null : product.recyclingCodes.split(',').map(code => {
 				const material = recycling_codes.find(o => o.num == code);
 				console.log(material);
 				return !material ? null : {
@@ -147,7 +146,8 @@ app.get('/v1/products/:barcode', async (req, res) => {
 			// If the product does not exist, return an appropriate error message
 			res.status(404).send('Product with the given barcode does not exist');
 		}
-	} catch (error) {
+	}
+	catch (error) {
 		// Handle any other errors that occur during the process
 		res.status(500).send('An error occurred while retrieving the product information');
 		console.log(error);
