@@ -92,7 +92,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 					},
 				});
 				const materials = !recommendation.recyclingCodes ? null : recommendation.recyclingCodes.split(',').map(code => {
-					const material = recycling_codes.find(o => o.num === code);
+					const material = recycling_codes.find(o => o.num == code);
 					return !material ? null : {
 						'code': code,
 						'type': material.typeGerman,
@@ -117,7 +117,7 @@ app.get('/v1/products/:barcode', async (req, res) => {
 			}
 
 			const materials = !product.recyclingCodes ? null : product.recyclingCodes.split(',').map(code => {
-				const material = recycling_codes.find(o => o.num === code);
+				const material = recycling_codes.find(o => o.num == code);
 				return !material ? null : {
 					'code': code,
 					'type': material.typeGerman,
